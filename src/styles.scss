@@ -1,26 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+// These styles help in visualizing the area of the components/elements
+
 *,
 ::after,
 ::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: 1px dashed red;
-  outline-offset: -1px;
+  outline: 1.8px dashed rgb(64, 0, 255);
+  outline-offset: -1.8px;
 }
 
 input,
 button,
 select,
 form {
-  outline: 1.3px dashed rgb(198, 232, 87);
-  outline-offset: -1.3px;
+  outline: 1.8px dashed rgb(198, 232, 87);
+  outline-offset: -1.8px;
+}
+
+// Comment the hover to disable hover change
+*:not(body):hover {
+  outline: 1.8px dotted red;
+  outline-offset: -1.8px;
 }
 
 table,
 td,
 tr,
 th {
-  outline: 1.5px dashed rgb(56, 179, 221);
+  outline: 1.8px dashed rgb(56, 179, 221);
   outline-offset: -1.8px;
 }
