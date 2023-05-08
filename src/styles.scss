@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 1px dashed red;
+  outline-offset: -1px;
+}
+
+input,
+button,
+select,
+form {
+  outline: 1.3px dashed rgb(198, 232, 87);
+  outline-offset: -1.3px;
+}
+
+table,
+td,
+tr,
+th {
+  outline: 1.5px dashed rgb(56, 179, 221);
+  outline-offset: -1.8px;
+}
