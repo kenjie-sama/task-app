@@ -1,34 +1,9 @@
-<navbar></navbar>
-<h1 ng-style="{ color: 'red' }">{{ title.toUpperCase() }}</h1>
-<div class="container">
-  <div class="todo-list">
-    <div class="input-group">
-      <input type="text" placeholder="Todo" />
-      <button class="add-button">+</button>
-    </div>
-    <table>
-      <tr class="even">
-        <td><pre>Visit Ann</pre></td>
-        <td>
-          <button class="delete-button">Delete</button>
-          <button class="done-button">Done</button>
-        </td>
-      </tr>
-      <tr class="odd">
-        <td><pre>Call Dad</pre></td>
-        <td>
-          <button class="delete-button">Delete</button>
-          <button class="done-button">Done</button>
-        </td>
-      </tr>
-      <tr class="even">
-        <td><pre>Go to Gym</pre></td>
-        <td>
-          <button class="delete-button">Delete</button>
-          <button class="done-button">Done</button>
-        </td>
-      </tr>
-    </table>
-  </div>
+<app-navbar></app-navbar>
+<div class="space"></div>
+<div>
+  <app-task-input></app-task-input>
+  <app-task-list></app-task-list>
+  <app-counter></app-counter>
 </div>
-<footer></footer>
+
+<app-footer></app-footer>

@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { Logger } from 'src/app/services/logger.service';
 
 @Component({
-  selector: 'counter',
+  selector: 'app-counter',
   templateUrl: './counter.component.html',
+  styleUrls: ['./counter.component.scss'],
 })
 export class Counter {
   public title: string = 'Counter';

@@ -1,0 +1,52 @@
+h1 {
+  text-align: center;
+}
+
+.space {
+  padding: 18px 0%;
+
+  width: 100%;
+  display: inline-block;
+}
+
+.todo-list {
+  width: 300px;
+  border-radius: 30px;
+  background-color: rgb(219, 219, 219);
+  padding: 30px;
+}
+
+table {
+  width: 100%;
+  & > tr {
+    width: 100%;
+    display: inline;
+  }
+}
+
+.input-group {
+  * {
+    display: inline-block;
+    margin-top: 5px;
+    width: 100%;
+  }
+  input {
+    padding: 0.8em;
+    border: none;
+    &:focus-visible {
+      border-bottom: solid 3px rgb(0, 0, 0);
+    }
+  }
+  .add-button {
+    background-color: rgb(58, 58, 58);
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 0.5em 0;
+    margin-top: 10px;
+    border-radius: 0.57em;
+    &:hover {
+      background-color: rgb(34, 34, 34);
+    }
+  }
+}
