@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
 })
-export class NavBar {
+export class NavBarComponent {
   public Alert(message: string): void {
     alert('You clicked ' + message);
   }

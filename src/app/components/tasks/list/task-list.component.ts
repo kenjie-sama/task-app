@@ -7,10 +7,7 @@ import ITask from 'src/assets/scripts/interfaces/ITasks';
   styleUrls: ['./task-list.component.scss'],
   templateUrl: './task-list.component.html',
 })
-export class TaskList {
+export class TaskListComponent {
   constructor(private tasks: Tasks) {}
   public readonly GetTasks: () => ITask[] = () => this.tasks.Tasks;
-  public OnToggleTask(task: ITask): void {
-    task.isReminded = !task.isReminded;
-  }
 }

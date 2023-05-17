@@ -1,38 +1,45 @@
-h1 {
-  text-align: center;
-  margin-bottom: 0.4em;
+li {
+  list-style-type: none;
+  margin-top: 0.34em;
 }
+
+p {
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: right;
+}
+
 .reminded {
   background-color: rgb(61, 61, 61);
   color: whitesmoke;
   outline: none;
 
   p {
-    font-size: 0.8em;
-    text-indent: 20px;
     color: rgb(201, 201, 201);
   }
+
   &:hover {
     background-color: rgb(24, 24, 24);
+    outline: none;
   }
 }
 
-li {
-  list-style-type: none;
+button {
   padding: 1em 2.4em;
-  margin-top: 0.34em;
+  margin: 0;
+  width: 100%;
   background-color: transparent;
-  cursor: pointer;
+  border: none;
   border-radius: 0.8em;
   transition: all 0.3s;
   outline: solid 3px rgb(61, 61, 61);
   outline-offset: -3px;
-  p {
-    font-size: 0.8em;
-    text-indent: 20px;
-  }
+  text-align: left;
+
   &:hover {
     background-color: rgb(201, 201, 201);
     outline: solid 3px rgba(61, 61, 61, 0);
+  }
+  * {
   }
 }

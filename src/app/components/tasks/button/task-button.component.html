@@ -1,0 +1,10 @@
+<li>
+  <button
+    [title]="this.GetDescription()"
+    (dblclick)="OnToggleTask()"
+    [ngClass]="task.isReminded ? 'reminded' : ''"
+  >
+    <h4>{{ index + 1 }}. {{ this.GetTitle() }}</h4>
+    <p>{{ task.date }}</p>
+  </button>
+</li>

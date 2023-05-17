@@ -27,14 +27,18 @@ table {
 .input-group {
   * {
     display: inline-block;
-    margin-top: 5px;
+    margin-top: 0.9em;
     width: 100%;
   }
   input {
     padding: 0.8em;
     border: none;
+    transition: box-shadow 0.3s;
     &:focus-visible {
-      border-bottom: solid 3px rgb(0, 0, 0);
+      box-shadow: 0 3px 0 #000;
+    }
+    &.invalid {
+      box-shadow: 0 3px 0 #ff0000;
     }
   }
   .add-button {

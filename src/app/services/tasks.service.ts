@@ -5,22 +5,22 @@ import ITask from 'src/assets/scripts/interfaces/ITasks';
 export class Tasks {
   public Tasks: ITask[] = [
     {
-      title: 'Frontend Development',
-      description: 'Developing and Improving UI/UX design',
+      title: 'frontend development',
+      description: 'developing and Improving UI/UX design',
       isReminded: true,
       date: 'Jan. 3, 2023',
     },
     {
-      title: 'Backend Development',
+      title: 'backend development',
       description:
-        'Optimizing and improving security features and access controls',
+        'optimizing and improving security features and access controls',
       isReminded: true,
       date: 'Feb. 9, 2023',
     },
     {
-      title: 'Database Management',
+      title: 'database management',
       description:
-        'Managing data and creating pipelines for analyzing, processing and transmission of data',
+        'managing data and creating pipelines for analyzing, processing and transmission of data',
       isReminded: false,
       date: 'Apr. 18, 2023',
     },

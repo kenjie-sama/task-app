@@ -1,6 +1,6 @@
 export default interface ITask {
-  title: string | undefined;
-  description: string | undefined;
-  isReminded: boolean | undefined;
-  date: string | undefined;
+  title: string;
+  description: string;
+  isReminded: boolean;
+  date: string;
 }

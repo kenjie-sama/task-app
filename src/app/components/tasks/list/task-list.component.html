@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Task List</h1>
+  <ul>
+    <app-task-button
+      *ngFor="let task of this.GetTasks(); index as i"
+      [task]="task"
+      [index]="i"
+    ></app-task-button>
+  </ul>
+</div>

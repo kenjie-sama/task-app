@@ -6,7 +6,7 @@ import { Logger } from 'src/app/services/logger.service';
   templateUrl: './counter.component.html',
   styleUrls: ['./counter.component.scss'],
 })
-export class Counter {
+export class CounterComponent {
   public title: string = 'Counter';
   public count: number = 0;
   constructor(private logger: Logger) {}
