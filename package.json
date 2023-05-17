@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "bld": "ng serve --prod",
     "test": "ng test"
   },
   "private": true,
