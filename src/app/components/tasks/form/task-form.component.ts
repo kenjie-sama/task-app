@@ -1,20 +1,40 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+import { AbstractControl, NgForm } from '@angular/forms';
+
 import { Tasks } from 'src/app/services/tasks.service';
-import ITask from '../../../../assets/scripts/interfaces/ITasks';
 import { MatSlideToggle } from '@angular/material/slide-toggle';
 import { DateString } from 'src/assets/scripts/classes/DateString';
 import { StringUtil } from 'src/assets/scripts/classes/StringUtil';
 
+import ITask from '../../../../assets/scripts/interfaces/ITasks';
+
 @Component({
-  selector: 'app-task-input',
-  templateUrl: './task-input.component.html',
-  styleUrls: ['./task-input.component.scss'],
+  selector: 'app-task-form',
+  templateUrl: './task-form.component.html',
+  styleUrls: ['./task-form.component.scss'],
 })
 export class TaskInputComponent {
   public constructor(private tasks: Tasks) {}
+  public checked: boolean = false;
   @Output() submitTaskEvent: EventEmitter<ITask> = new EventEmitter<ITask>();
 
-  public OnSubmit(
+  public OnSubmit(taskForm: NgForm): void {
+    const { title, description, date, isReminded }: ITask = taskForm.value;
+    console.log(title === '');
+
+    // if (title === '') {
+    //   titleComponent.focus();
+    //   return;
+    // }
+    this.tasks.Tasks.push({
+      title: StringUtil.ToTitleCase(title),
+      description: StringUtil.ToSentenceCase(description),
+      date: date,
+      isReminded: isReminded,
+    });
+  }
+
+  /*public OnSubmit(
     titleComponent: HTMLInputElement,
     descriptionComponent: HTMLInputElement,
     dateComponent: HTMLInputElement,
@@ -48,4 +68,5 @@ export class TaskInputComponent {
       isReminded: isRemindedComponent.checked,
     });
   }
+  */
 }

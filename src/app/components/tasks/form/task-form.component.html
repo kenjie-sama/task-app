@@ -1,0 +1,41 @@
+<h1 ng-style="{ color: 'red' }">Task Input</h1>
+<div class="container">
+  <div class="todo-list">
+    <form
+      class="input-group"
+      #taskForm="ngForm"
+      (ngSubmit)="this.OnSubmit(taskForm)"
+    >
+      <label>Title</label>
+      <br />
+      <input
+        type="text"
+        name="title"
+        placeholder="Task Title..."
+        required
+        ngModel
+        minlength="4"
+        maxlength="30"
+      />
+      <label>Description</label>
+      <input
+        type="text"
+        name="description"
+        placeholder="Task Description..."
+        required
+        ngModel
+        minlength="4"
+        maxlength="200"
+      />
+      <label>Date</label>
+      <br />
+      <input type="date" name="date" placeholder="Todo" required ngModel />
+      <br />
+      <mat-slide-toggle name="isReminded" [(ngModel)]="checked"
+        >Set Reminder</mat-slide-toggle
+      >
+
+      <button class="add-button" type="submit">Add Task</button>
+    </form>
+  </div>
+</div>
